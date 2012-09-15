@@ -1,0 +1,12 @@
+.view {
+    margin-top: -10px;
+}
+
+.view p {
+    font-size: 22px;
+    font-family: Georgia, Serif;
+    color: #333;
+    line-height: 34px;
+    margin-top: 20px;
+}
+

@@ -1,34 +1,33 @@
 <?php require('header.php'); ?>
     <div class="container">
-        <div class="hero-unit">
-            <h1>Hello!</h1>
-            <p>Just enter your text into the box on the left, select the rules you want applied on the right, click "View" and enjoy reading your content in all its magical readable glory.</p>
-        </div>
-        <div class="row">
-            <form class="form-text-input" action="view" method="post">
+       <div class="row">
+           <form class="form-text-input" action="view" method="post">
                 <div class="span8">
-                    <textarea class="span8" rows="6" name="text"></textarea>.
+                    <legend>Paste your text</legend>
+                     <? if(isset($error)): ?>
+                    <div class="alert alert-error">
+                        <strong>Oops! </strong><?=$error;?>
+                    </div>
+                    <? endif; ?>
+                    <textarea class="span8" rows="6" name="text" placeholder="Text to display.."></textarea>
                     <div class="form-action">
                         <button type="submit" class="btn btn-primary">View</button>
                     </div>
                 </div>
-                <div class="span4">
-                    <label class="rule1">
-                        <input type="checkbox" value="" checked="yes" name="rule-sentence-newline">
-                        Newline after every sentence.
-                    </label>
-                    <label class="rule2">
-                        <input type="checkbox" value="" checked="yes" name="rule-comma-newline-tab">
-                        Newline + Tab after every comma.
-                    </label>
-                    <label class="rule3">
-                        <input type="checkbox" value="" checked="yes" name="rule-semicolon-newline-tab">
-                        Newline + Tab after every semi-colon.
-                    </label>
-                    <label class="rule4">
-                        <input type="checkbox" value="" checked="yes" name="rule-colon-newline-tab">
-                        Newline + Tab after every colon.
-                    </label>
+                <div class="rules span4">
+                    <legend>Set your rules</legend>
+                    <div class="input-append">
+                        <input type="text" name="rules[]" value="new-line after sentence" readonly="readonly">
+                        <button class="remove-button btn" type="button">Remove</button>
+                    </div>
+                    <div class="input-append">
+                        <input type="text" name="rules[]" value="new-line and tab after comma" readonly="readonly">
+                        <button class="remove-button btn" type="button">Remove</button>
+                    </div>
+                    <div class="input-append">
+                        <input type="text" name="rules[]" placeholder="Rule here..">
+                        <button class="add-button btn" type="button">Add</button>
+                    </div>
                 </div>
             </form>
         </div>

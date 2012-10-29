@@ -1,3 +1,8 @@
+input.error, textarea.error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
 .view {
     margin-top: -10px;
 }
@@ -9,4 +14,3 @@
     line-height: 34px;
     margin-top: 20px;
 }
-

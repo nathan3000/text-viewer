@@ -11,21 +11,21 @@
                     <? endif; ?>
                     <textarea class="span8" rows="6" name="text" placeholder="Text to display.."></textarea>
                     <div class="form-action">
-                        <button type="submit" class="btn btn-primary">View</button>
+                        <button type="submit" class="btn btn-primary submit">View</button>
                     </div>
                 </div>
                 <div class="rules span4">
                     <legend>Set your rules</legend>
                     <div class="input-append">
-                        <input type="text" name="rules[]" value="new-line after sentence" readonly="readonly">
+                        <input type="text" name="rules[]" value="new-line after sentence">
                         <button class="remove-button btn" type="button">Remove</button>
                     </div>
                     <div class="input-append">
-                        <input type="text" name="rules[]" value="new-line and tab after comma" readonly="readonly">
+                        <input type="text" name="rules[]" value="new-line and tab after comma">
                         <button class="remove-button btn" type="button">Remove</button>
                     </div>
                     <div class="input-append">
-                        <input type="text" name="rules[]" placeholder="Rule here..">
+                        <input type="text" placeholder="Rule here..">
                         <button class="add-button btn" type="button">Add</button>
                     </div>
                 </div>

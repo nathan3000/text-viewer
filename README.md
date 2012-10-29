@@ -1,4 +1,4 @@
 Text Viewer
 ===========
 
-Hacked together app using the PHP micro framework Slim for Dad to view text a certain way with custom rules with a teeny bit of trivial "natural language processing" (lol).
+Hacked together app for Dad, using the PHP micro framework Slim. App displays text according to some set of rules e.g. new line after every sentence.
